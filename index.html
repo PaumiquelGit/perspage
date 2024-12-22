@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Formulario!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="autor" content="Paumiquel">
+        <link href="index-css.css" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+        <h1>Bienvenid@ a mi formulario!</h1>
+        <h3 class="h3-header">Made by Gaku</h3>
+        <img class="n-img" src="assets/n_face.png" width="100px" height="100px">
+        <p class="parrafo-arriba">Rellena este formulario, si us plau! ^^</p>
+    </header>
+    <main>
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-center">
+            <input type="hidden" name="access_key" value="e7c8b519-ea98-49be-b709-fb6e30b3c256">
+                <fieldset>
+                    <legend class="legend-form">Háblame un poco sobre tí...</legend>
+                    <br>
+                    <label for="nickname" name="nickname">Nickname:</label>
+                    <br>
+                    <input type="text" name="nickname" maxlength="22" placeholder="Nickname" required>
+                    <br>
+                    <br>
+                    <label for="cumple" name="cumple">Cumpleaños:</label>
+                    <br>
+                    <input type="date" name="cumple" placeholder="Cumple" required>
+                    <br>
+                    <br>
+                    <label class="cuentame-algo" for="description">¡Cuéntame algo!</label>
+                    <br>
+                    <textarea class="textarea-form" name="description" rows="5" cols="30" placeholder="Tell me" required></textarea>
+                    <br>
+                    <br>
+                    <label for="fav-color" name="fav-color">¿Color favorito?</label>
+                    <br>
+                    <input type="color" name="fav-color" placeholder="Color" required>
+                    <br>
+                    <br>
+                    <label for="queprefieres" name="queprefieres">¿Qué prefieres?</label>
+                    <br>
+                    <select class="select-prefiero" name="queprefieres" placeholder="Prefiere" required>
+                        <option>Comer por la mañana</option>
+                        <option>Comer por la tarde</option>
+                        <option>Comer por la noche</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="queteparece" name="queteparece" value="enunciado">¿Qué te parece el diseño de la página?</label>
+                    <br>
+                    <br>
+                    <div class="queteparece-opciones">
+                        <label class="queteparece-opciones-texto" for="queteparece" name="queteparece" value="estabien">
+                        <input type="radio" name="queteparece" value="estabien" placeholder="B-Bien">Está bien
+                        </label>
+                    </div>
+                    <div class="queteparece-opciones">
+                        <label class="queteparece-opciones-texto" for="queteparece" name="queteparece" value="regular-mejorable">
+                        <input type="radio" name="queteparece" value="regular-mejorable" placeholder="B-Regu">Regular/Mejorable
+                        </label>
+                    </div>
+                    <div class="queteparece-opciones">
+                        <label class="queteparece-opciones-texto" for="queteparece" name="queteparece" value="mala">
+                        <input type="radio" name="queteparece" value="mala" placeholder="B-Mal">Mala
+                        </label>
+                    </div>
+                    <br>
+                    <label for="quecambiarias" name="quecambiarias">¿Qué cambiarías del diseño?</label>
+                    <br>
+                    <textarea class="textarea-form" name="quecambiarias" rows="5" cols="31" placeholder="Cambiaría..."></textarea>
+                    <br>
+                </fieldset>
+                <div class="div-botonenvio borde">
+                    <button class="estilo boton" type="submit">Enviar a Gaku!</button>
+                    <button class="estilo boton" type="reset">Limpia</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+    </body>
+</html>

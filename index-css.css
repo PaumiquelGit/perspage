@@ -1,0 +1,102 @@
+body {
+    background: linear-gradient(#fee573,#fff);
+}
+header {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.h3-header {
+    color: darkgoldenrod;
+    margin-bottom: 0%;
+}
+.parrafo-arriba {
+    font-size: large;
+    margin-top: 0%;
+}
+fieldset {
+    border-style: dashed;
+    border-color: black;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.legend-form {
+    text-align: center;
+}
+form {
+    font-size: 25px;
+    text-align: left;
+    text-align: center;
+}
+.textarea-form {
+    font-size: large;
+}
+input {
+    font-size: large;
+}
+.select-prefiero {
+    font-size:medium;
+}
+.queteparece-opciones {
+    display: flex;
+    margin-left: 40%;
+    margin-bottom: 10px;
+}
+.queteparece-opciones-texto {
+    font-size: medium;
+
+}
+.div-botonenvio {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto 10px;
+    line-height: normal;
+}
+.div-botonenvio .estilo {
+    background: #af40ff;
+    margin: 15px;
+    padding: 10px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    transition: .3s;
+    z-index: 1;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 700;
+}
+.div-botonenvio .estilo {
+    background-image: linear-gradient(to right, #F7971E, #FFD200);
+    box-shadow: 0 4px 15px 0 #F7971E66;
+    overflow: hidden;
+}
+.div-botonenvio .boton:hover:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+.div-botonenvio .boton:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 12px;
+    background-color: #8BC34A;
+    background-image: linear-gradient(to right, #feb47b, #ff7e5f);
+    transition: all 0.3s ease;
+}
+.div-botonenvio .boton:active {
+    box-shadow: unset;
+}
